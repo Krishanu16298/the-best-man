@@ -81,41 +81,5 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fontawesome-all.js"></script>
-    <script>
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById('navbar');
-        var showcase = document.getElementById('boxform')
-
-        var colchange = showcase.offsetTop - 60;
-
-        function myFunction() {
-            if (window.pageYOffset >= colchange) {
-                navbar.classList.remove('navbar-dark');
-                navbar.classList.add('navbar-light');
-                navbar.classList.add('lighten');
-            }
-            else {
-                navbar.classList.add('navbar-dark');
-                navbar.classList.remove('navbar-light');
-                navbar.classList.remove('lighten');
-            }
-        }
-    </script>
-    <script>
-        $(document).ready(function () {
-            $("a,button").on('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
