@@ -64,3 +64,38 @@ form label{
   font-size: 300px;
   color:#0066ff;
 }
+#features .box{
+  margin:80px 0;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+#features .box:hover{
+  background: #eee;
+}
+#features .box .ico{
+  font-size: 55px;
+  margin:20px 0;
+}
+#links{
+  padding:50px 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+#links p{
+  color:#00ddff;
+}
+#links a{
+  color:#fff;
+  text-decoration: none;
+}
+#links a:hover{
+  color:#0099ff;
+}
+#footer{
+  padding:20px;
+  background-color: #222;
+}
+#footer p{
+  margin:0;
+}
