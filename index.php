@@ -87,7 +87,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form class="form-group" action="login.html">
+                <form class="form-group" action="login.php" method="post">
                   <label>Name</label>
                   <input type="text" class="form-control">
                   <label>Email Id</label>
