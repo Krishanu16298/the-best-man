@@ -1,0 +1,16 @@
+body{
+    background: url('../img/13.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+.cov2{
+    background-color: rgba(0,0,0,0.7);
+}
+.navbar .nav-item{
+  padding:0 16px;
+}
+#about{
+    height: 100vh;
+    width:100vw;
+}
