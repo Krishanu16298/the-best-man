@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/serv.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Best Man Services | Contact</title>
+    <title>The Best Man Services | Contact</title>
 </head>
 
 <body>
@@ -26,19 +26,19 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">
+                        <a href="index.php" class="nav-link">
                             <i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">
+                        <a href="services.php" class="nav-link">
                             <i class="fab fa-hubspot"></i> Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">
+                        <a href="contact.php" class="nav-link">
                             <i class="fas fa-envelope"></i> Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">
+                        <a href="about.php" class="nav-link">
                             <i class="fas fa-users"></i> About Us</a>
                     </li>
                 </ul>
@@ -85,15 +85,15 @@
                 <div class="col-lg-4 align-self-center">
                     <p>Site menu</p>
                     <p>
-                        <a href="#">
-                            <i class="fab fa-hubspot"></i> Services</a>
+                        <a href="index.php">
+                            <i class="fab fa-home"></i> Home</a>
                     </p>
                     <p>
-                        <a href="contact.html">
+                        <a href="contact.php">
                             <i class="fas fa-phone"></i> Contact</a>
                     </p>
                     <p>
-                        <a href="#">
+                        <a href="about.php">
                             <i class="fas fa-users"></i> About Us</a>
                     </p>
                 </div>

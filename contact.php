@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Best Man Services | Contact</title>
+    <title>The Best Man Services | Contact</title>
 </head>
 <body>
     <div class="cov1">
@@ -21,23 +21,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav mr-auto">
-                            <a href="#" class="navbar-brand">Best Man Service</a>
+                            <a href="#" class="navbar-brand">The Best Man</a>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link">
+                                <a href="index.php" class="nav-link">
                                     <i class="fas fa-home"></i> Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="services.html" class="nav-link">
+                                <a href="services.php" class="nav-link">
                                     <i class="fab fa-hubspot"></i> Services</a>
                             </li>
                             <li class="nav-item active">
-                                <a href="contact.html" class="nav-link">
+                                <a href="#" class="nav-link">
                                     <i class="fas fa-envelope"></i> Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">
+                                <a href="about.php" class="nav-link">
                                     <i class="fas fa-users"></i> About Us</a>
                             </li>
                         </ul>

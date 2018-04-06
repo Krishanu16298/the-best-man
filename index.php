@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Best Man Services</title>
+  <title>The Best Man</title>
 </head>
 <body>
   <nav class="animated fadeIn navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
@@ -18,20 +18,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <a href="#" class="navbar-brand">Best Man Service</a>
+          <a href="#" class="navbar-brand">The Best Man</a>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item active">
             <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a href="services.html" class="nav-link"><i class="fab fa-hubspot"></i> Services</a>
+            <a href="services.php" class="nav-link"><i class="fab fa-hubspot"></i> Services</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="contact.php" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About Us</a>
+            <a href="about.php" class="nav-link"><i class="fas fa-users"></i> About Us</a>
           </li>
         </ul>
       </div>
@@ -42,7 +42,7 @@
       <div class="container">
         <div class="row text-center text-white">
           <div class="col content animated fadeInUp">
-            <h1>Best Man Services For You</h1>
+            <h1>The Best Man Services For You</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nihil blanditiis hic repellat, non dolor, magni deserunt asperiores excepturi, culpa quis! Unde possimus voluptas minima delectus distinctio laudantium dolorem autem.</p>
             <a href="#desc" id="redirect" class="btn btn-outline-primary">Read More</a>
           </div>
@@ -65,72 +65,15 @@
         <div class="row">
           <div class="col-lg-5">
             <h3 style="color:teal">New User</h3>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+            <a class="btn btn-success" href="sign.php?q=up">
               Sign up
-            </button>
+            </a>
           </div>
           <div class="col-lg-7" style="border-left:1px black solid">
             <h3 style="color:teal">Existing user</h3>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter2">
+            <a class="btn btn-success" href="sign.php?q=in">
               Sign in
-            </button>
-          </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="text-primary">Sign Up</h1>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form class="form-group" action="login.php" method="post">
-                  <label>Name</label>
-                  <input type="text" class="form-control">
-                  <label>Email Id</label>
-                  <input type="email" class="form-control">
-                  <label>Mobile no.</label>
-                  <input type="text" pattern="[7-9]{1}[0-9]{9}" class="form-control">
-                  <label>Password</label>
-                  <input type="password" class="form-control">
-                  <label>Confirm Password</label>
-                  <input type="password" class="form-control">
-                  <br>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-success form-control">Sign Up</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="text-primary">Sign In</h1>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form class="form-group">
-                  <label>Name</label>
-                  <input type="text" class="form-control">
-                  <label>Password</label>
-                  <input type="password" class="form-control">
-                  <br>
-                  <input type="checkbox">
-                  <label>Remember me</label>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-success form-control">Sign in</button>
-                  </div>
-                </form>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -181,7 +124,7 @@
             <br>
             <h1 class="text-success">Satisfied Customers</h1>
             <br>
-            <h3>We provide BestMan for each and every job..</h3>
+            <h3>We provide The Best Man for each and every job..</h3>
           </div>
         </div>
       </div>
@@ -213,9 +156,9 @@
       <div class="row">
         <div class="col-lg-4 align-self-center">
           <p>Site menu</p>
-          <p><a href="#"><i class="fab fa-hubspot"></i> Services</a></p>
-          <p><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></p>
-          <p><a href="#"><i class="fas fa-users"></i> About Us</a></p>
+          <p><a href="services.php"><i class="fab fa-hubspot"></i> Services</a></p>
+          <p><a href="contact.php"><i class="fas fa-phone"></i> Contact</a></p>
+          <p><a href="about.php"><i class="fas fa-users"></i> About Us</a></p>
         </div>
         <div class="col-lg-4 align-self-center">
           <p>Popular services</p>
