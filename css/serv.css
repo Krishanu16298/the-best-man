@@ -18,8 +18,9 @@ body{
     margin:auto;
 }
 
-.mainico h1{
-    font-size:400px;
+.mainico img{
+    width:200px;
+    padding:30px;
 }
 a{
     color:#0066ff;

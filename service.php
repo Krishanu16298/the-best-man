@@ -1,3 +1,15 @@
+<?php
+  require('include.php');
+  session_start();
+  $name = $_SESSION['name'];
+  $mobile = $_SESSION['mobile'];
+  $json = file_get_contents("assets/services.json");
+  $json = json_decode($json,true);
+  if(isset($_GET['q'])){
+      $val = $_GET['q'];
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +21,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/serv.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>The Best Man Services | Contact</title>
+    <title>The Best Man Services | <?php echo $json[$val]['name'];?></title>
 </head>
 
 <body>
@@ -49,27 +61,15 @@
         <div class="contain1">
             <div class="row">
                 <div class="col-lg-7 mainico text-center align-self-center animated fadeIn">
-                    <h1><i class="fab fa-schlix" style="color:#ced107"></i></h1>
+                    <img src="<?php echo $json[$val]['icon'];?>" alt="">
                 </div>
                 <div class="col-lg-5 align-self-center animated flipInX">
-                    <h1>Home Services</h1>
-                    <p><small>Services related to home decoration</small></p>
+                    <h1><?php echo $json[$val]['name'];?></h1>
+                    <p><small></small></p>
                     <p>
                         <ul>
                             <li>
                                 <a href="#">Home Decoration</a>
-                            </li>
-                            <li>
-                                <a href="#">Plumber</a>
-                            </li>
-                            <li>
-                                <a href="#">Electrician</a>
-                            </li>
-                            <li>
-                                <a href="#">White Wash</a>
-                            </li>
-                            <li>
-                                <a href="#">Laundry</a>
                             </li>
                         </ul>
                         <p>and many more...</p>

@@ -103,7 +103,7 @@ body{
 
 .main-content .card{
   border-radius: 10px;
-  transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 } 
 .main-content .card:hover{
   box-shadow: 0 10px 20px #0008;

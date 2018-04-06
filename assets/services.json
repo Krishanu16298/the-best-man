@@ -1,5 +1,6 @@
 {
     "hs":{
+        "val":"hs",
         "icon":"img/home-icon.jpeg",
         "name":"Home Services",
         "desc":"These are the home services we provide ..",
@@ -10,6 +11,7 @@
         ]
     },
     "ps":{
+        "val":"ps",
         "icon": "img/party-icon.jpeg",
         "name":"Party and Social",
         "desc":"These are the Party and Social Gathering services we provide here..",
@@ -21,6 +23,7 @@
         ]
     },
     "ms":{
+        "val":"ms",
         "icon": "img/medical-icon.jpeg",
         "name": "Medical Services",
         "desc": "These are the medical services we provide ..",
@@ -31,6 +34,7 @@
         ]
     },
     "as": {
+        "val":"as",
         "icon": "img/automobiles-icon.jpeg",
         "name": "Automobile Services",
         "desc": "These are the automobile services we provide ..",
@@ -41,6 +45,7 @@
         ]
     },
     "pgs": {
+        "val":"pgs",
         "icon": "img/personal-icon.jpeg",
         "name": "Personal and Grooming services",
         "desc": "These are the personal and grooming services we provide ..",
@@ -51,6 +56,7 @@
         ]
     },
     "es": {
+        "val":"es",
         "icon": "img/education-icon.jpeg",
         "name": "Educational & career Services",
         "desc": "These are the education and career services we provide ..",
@@ -61,6 +67,7 @@
         ]
     },
     "ts": {
+        "val":"ts",
         "icon": "img/tech-icon.jpeg",
         "name": "Tech and web Services",
         "desc": "These are the tech and web services we provide ..",
@@ -71,6 +78,7 @@
         ]
     },
     "tts": {
+        "val":"tts",
         "icon": "img/travel-icon.jpeg",
         "name": "Travel and Tourism Services",
         "desc": "These are the travel and tourism services we provide ..",

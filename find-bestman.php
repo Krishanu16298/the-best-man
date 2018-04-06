@@ -5,9 +5,6 @@
   $mobile = $_SESSION['mobile'];
   $json = file_get_contents("assets/services.json");
   $json = json_decode($json,true);
-  // foreach($json as $key){
-  //   echo $key['name'].'<br>';
-  // }
 ?>
 
 <!DOCTYPE html>
@@ -85,7 +82,7 @@
     <div class="container-fluid">
       <div class="row mx-2" id="row1">
         <?php foreach($json as $key):?>      
-        <a class="col-md-3 card align-self-center" href="#">
+        <a class="col-md-3 card align-self-center" href="service.php?q=<?php echo $key['val'];?>">
           <img class="card-img-top" src="<?php echo $key['icon']?>">
           <div class="card-body">
             <p class="card-text text-dark"><?php echo $key['name']?></p>
