@@ -1,3 +1,22 @@
+<?php
+  require('include.php');
+  session_start();
+  $name = $_SESSION['name'];
+  $mobile = $_SESSION['mobile'];
+  $sel = '';
+  $json = file_get_contents("assets/services.json");
+  $json = json_decode($json,true);
+  if(isset($_GET['q'])){
+    $sel = $_GET['q'];
+  }
+  if(isset($_POST['service'])){
+    $query = 'insert into userserv values("'.$mobile.'","'.$_POST['service'].'","'.$_POST['desc'].'")';
+    echo $query;
+    mysqli_query($conn, $query);
+    header('Location: find-bestman.php');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,20 +36,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <a href="#" class="navbar-brand animated fadeInRight"><i class="fas fa-user"></i> Hello, John Doe</a>
+          <a href="#" class="navbar-brand animated fadeInRight"><i class="fas fa-user"></i> Hello, <?php echo $name?></a>
         </ul>
         <ul class="nav navbar-nav navbar-right animated fadeInLeft">
           <li class="nav-item active">
-            <a href="#" class="nav-link">Home</a>
+            <a href="find-bestman.php" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Services</a>
+            <a href="contact.php" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="about.php" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About Us</a>
+            <a href="find-bestman.php?q=logout" class="nav-link">Logout</a>
           </li>
         </ul>
       </div>
@@ -47,30 +66,38 @@
             </div>
           </div>
       </div>
-      <form action="#" method="post" class="animated fadeInUp">
+      <form action="bebestman.php" method="post" class="animated fadeInUp">
         <div class="row">
           <div class="col col-md-4 m-4 p-3" id="form">
             <div class="form-group">
               <label for="service">What Service you can Provide</label>
-              <select class="form-control" id="service">
-                <option selected>Select Service..</option>
-                <option>Electrician</option>
-                <option>Painter</option>
-                <option>Plumber</option>
+              <select class="form-control" id="service" onchange="location = this.value;">
+                <option selected><?php if(isset($_GET['q'])){
+                  echo $json[$sel]['name'];
+                }
+                else{
+                  echo 'Select service';
+                }
+                  ?></option>
+                <?php foreach($json as $key):?>
+                  <option value="bebestman.php?q=<?php echo $key['val'];?>"><?php echo $key['name'];?></option>
+                <?php endforeach;?>
               </select>
             </div>
             <div class="form-group">
               <label for="subcategory">Select the sub-category</label>
-              <select class="form-control" id="subcategory">
+              <select class="form-control" id="subcategory" name="service">
                 <option selected>Select Service..</option>
-                <option>Electrician</option>
-                <option>Painter</option>
-                <option>Plumber</option>
+                <?php if(isset($_GET['q'])):?>
+                  <?php foreach($json[$sel]['serv'] as $key):?>
+                    <option value="<?php echo $key;?>"><?php echo $key;?></option>
+                  <?php endforeach;?>
+                <?php endif;?>
               </select>
               </div>
               <div class="form-group">
               <label for="description">Please Fill in some details about your skill</label>
-              <textarea name="name" class="form-control" id="description"></textarea>
+              <textarea name="desc" class="form-control" id="description"></textarea>
             </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-outline-light form-control">Submit</button>

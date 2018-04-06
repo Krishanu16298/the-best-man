@@ -53,9 +53,9 @@
             <div class="bodyc container">
                 <div class="row text-center text-white">
                     <div class="col-lg-4">
-                        <img src="img/3.gif" alt="">
+                        <img src="img/a.jpg" alt="">
                         <h2>Animesh</h2>
-                        <p>Main Idea proposer<br>Front end and back end developer</p>
+                        <p>Main Idea proposer<br>Front end and back end developer<br>Back-end design</p>
                         <blockquote class="blockquote">"A clever person <strong>solves</strong> a problem, a wise person <strong>avoids</strong> it!"
                         <footer class="blockquote-footer">
                             <cite title="Source Title">Animesh</cite>
@@ -65,7 +65,7 @@
                     <div class="col-lg-4" style="margin-top:105px;">
                         <img src="img/5.gif" alt="">
                         <h2>Krishanu Mallik Thakur</h2>
-                        <p>Main Frontend Developer<br>Server Manager</p>
+                        <p>Main Frontend Developer<br>Server Manager<br>Main Back-end coding</p>
                         <blockquote class="blockquote">"A code without error is a trap!"
                             <footer class="blockquote-footer">
                                 <cite title="Source Title">Krishanu Mallik Thakur</cite>
@@ -75,7 +75,7 @@
                     <div class="col-lg-4">
                         <img src="img/7.gif" alt="">
                         <h2>Kishan Keshari</h2>
-                        <p>Designing and Implementation<br>expert and Analyzer</p>
+                        <p>Designing and Implementation<br>Expert and Analyzer</p>
                         <blockquote class="blockquote">"What happens in console log, stays in console log!"
                             <footer class="blockquote-footer">
                                 <cite title="Source Title">Kishan Keshari</cite>

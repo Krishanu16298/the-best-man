@@ -71,7 +71,6 @@ body{
 }
 #message{
   padding: 1rem 0;
-  height: 25vh;
   background-color: rgba(204,204,204,0.2);
   font-family: sans-serif;
 }

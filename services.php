@@ -54,67 +54,67 @@
         <section id="boxes">
             <div class="con1">
                 <div class="row text-center">
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-briefcase-medical" style="color:#0066ff"></i>
                         <h3>Medical Services</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Medical services for you and your family</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-pencil-alt" style="color:#af0999"></i>
                         <h3>Speech Writing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Speech Writing for occasions</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fab ico fa-schlix" style="color:#b8bb05"></i>
                         <h3>Home Services</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Home and decor services</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-utensils" style="color:#d10909"></i>
                         <h3>Catering Services</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Catering services for parties</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-seedling" style="color:#199619"></i>
                         <h3>Grocery services</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Grocers at your doorstep</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-graduation-cap" style="color:#000"></i>
                         <h3>Education</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Education and carrer advices</p>
                     </a>
                 </div>
                 <div class="row text-center">
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-bug" style="color:tomato"></i>
                         <h3>Pest Control</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Get rid of those bugs</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-quidditch" style="color:#008855"></i>
                         <h3>Janitor Services</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Your your Office clean</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-user" style="color:#3702c9"></i>
                         <h3>Personal services</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Personal and Grooming services</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-car" style="color:#aaaa00"></i>
                         <h3>Automobile</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Cars and Bikes, get them repaired</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-wrench" style="color:#0066ff"></i>
                         <h3>Mechanic</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>mechanic for your electricals</p>
                     </a>
-                    <a class="box col-lg-2 align-self-center" href="service.html">
+                    <a class="box col-lg-2 align-self-center" href="#">
                         <i class="fas ico fa-camera-retro" style="color:red"></i>
                         <h3>Photographer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla.</p>
+                        <p>Smile please...</p>
                     </a>
                 </div>
             </div>
@@ -180,7 +180,7 @@
         </div>
     </section>
     <footer id="footer" class="text-center text-white">
-        <p>CopyRight &copy; 2018 | Best Man services</p>
+        <p>CopyRight &copy; 2018 | The Best Man services</p>
     </footer>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>

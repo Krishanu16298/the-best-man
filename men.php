@@ -1,32 +1,33 @@
-<?php
-  require('include.php');
+<?php 
   session_start();
-  $name = $_SESSION['name'];
-  $mobile = $_SESSION['mobile'];
+  require('include.php');
   $json = file_get_contents("assets/services.json");
   $json = json_decode($json,true);
-  if(isset($_GET['q'])){
-      $val = $_GET['q'];
+  foreach($json as $key){
+    foreach($key['serv'] as $k){
+      if($k === $_GET['q']){
+        $icon = $key['icon'];
+      }
+    }
   }
+  $serv = $_GET['q'];
+  $query = 'select mobile from userserv where service="'.$serv.'"';
+  $r = mysqli_query($conn, $query);
+  $res = mysqli_fetch_all($r, MYSQLI_ASSOC);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/serv.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>The Best Man Services | <?php echo $json[$val]['name'];?></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/men.css">
+  <title>The Best Man | Services</title>
 </head>
-
 <body>
-    <div class="cov2">
-    <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+  <nav class="navbar navbar-expand-md navbar-light" id="navbar">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +35,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
-                    <a href="#" class="navbar-brand">Best Man Service</a>
+                    <a href="#" class="navbar-brand">The Best Man</a>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
@@ -57,29 +58,41 @@
             </div>
         </div>
     </nav>
-    <section id="main">
-        <div class="contain1">
-            <div class="row">
-                <div class="col-lg-7 mainico text-center align-self-center animated fadeIn">
-                    <img src="<?php echo $json[$val]['icon'];?>" alt="">
-                </div>
-                <div class="col-lg-5 align-self-center animated flipInX">
-                    <h1><?php echo $json[$val]['name'];?></h1>
-                    <p><small><?php echo $json[$val]['desc'];?></small></p>
-                    <p>
-                        <ul>
-                            <?php foreach($json[$val]['serv'] as $key):?>
-                            <li>
-                                <a href="men.php?q=<?php echo $key?>"><?php echo $key?></a>
-                            </li>
-                            <?php endforeach;?>
-                        </ul>
-                        <p>and many more...</p>
-                    </p>
-                </div>
-            </div>
-        </div> 
-    </section>
+
+  <div class="container">
+    <div class="showcase">
+      <div class="row">
+        <div class="col col-md-6 animated bounceInDown" id="relative">
+          <img src="<?php echo $icon;?>" id="service-icon" alt="Home Services">
+        </div>
+        <div class="col col-md-6 align-self-center" id="service-details">
+          <h1 id="service-name"><?php echo $_GET['q'];?></h1>
+          <p class="text-secondary">Here are the listing for the best men -:</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-content animated fadeInUp">
+    <div class="container">
+      <div class="row mx-2" id="row">
+        <?php foreach($res as $key):?>
+        <?php 
+        $q = 'select name,email from users where users.mobile="'.$key['mobile'].'"';
+        $res2 = mysqli_query($conn, $q);
+        $fin = mysqli_fetch_assoc($res2);
+        ?>
+        <div class="col-md-6 card" href="#"><div class="row">
+          <div class="col-5"><i style="color:#0066ff" class="card-img-top fas fa-user"></i></div>
+          <div class="card-body col-7">
+            <p class="card-text text-dark"><?php echo $fin['name'];?></p>
+            <p class="card-text text-dark">Mobile: <?php echo $key['mobile'];?></p>
+            <p class="card-text text-dark"><?php echo $fin['email'];?></p>
+          </div>
+          </div>
+        </div>
+      <?php endforeach;?>
+      </div>
     </div>
     <section id="links">
         <div class="container">
@@ -88,7 +101,7 @@
                     <p>Site menu</p>
                     <p>
                         <a href="index.php">
-                            <i class="fab fa-home"></i> Home</a>
+                            <i class="fas fa-home"></i> Home</a>
                     </p>
                     <p>
                         <a href="contact.php">
@@ -141,11 +154,13 @@
         </div>
     </section>
     <footer id="footer" class="text-center text-white">
-        <p>CopyRight &copy; 2018 | Best Man services</p>
+        <p>CopyRight &copy; 2018 | The Best Man services</p>
     </footer>
+  </section>
+  
+
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fontawesome-all.js"></script>
-</body>
-
+  </body>
 </html>

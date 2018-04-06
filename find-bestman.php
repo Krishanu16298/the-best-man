@@ -1,10 +1,21 @@
 <?php
+  
   require('include.php');
   session_start();
   $name = $_SESSION['name'];
   $mobile = $_SESSION['mobile'];
+  $query = 'select service,des from userserv where mobile="'.$mobile.'"';
+  $r = mysqli_query($conn, $query);
+  $res = mysqli_fetch_all($r, MYSQLI_ASSOC);
   $json = file_get_contents("assets/services.json");
   $json = json_decode($json,true);
+  if(isset($_GET['q'])){
+    if($_GET['q'] === 'logout'){
+      session_unset();
+      session_destroy();
+      header('Location: index.php');
+    }
+  }
 ?>
 
 <!DOCTYPE html>
@@ -31,16 +42,16 @@
         </ul>
         <ul class="nav navbar-nav navbar-right animated fadeInLeft">
           <li class="nav-item active">
-            <a href="#" class="nav-link">Home</a>
+            <a href="find-bestman.php" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Services</a>
+            <a href="contact.php" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="about.php" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About Us</a>
+            <a href="find-bestman.php?q=logout" class="nav-link">Logout</a>
           </li>
         </ul>
       </div>
@@ -71,9 +82,16 @@
       <div class="col col-md-8">
         <h1>What service are you looking for?</h1>
         <p>We have a wide range of services for you.</p>
+        <?php if($res !== null):?>
+        <p>You are the Best Man for these services : </p>
+        <ul><?php foreach($res as $key):?>
+          <li><?php echo $key['service'];?></li>
+          <?php endforeach;?>
+        </ul>
+        <?php endif;?>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-primary my-5 mr-5 float-right" id="prefrence">CHANGE PREFRENCE</button>
+        <a class="btn btn-primary my-5 mr-5 float-right" href="bebestman.php" id="prefrence" >CHANGE PREFRENCE</a>
       </div>
     </div>
   </div>

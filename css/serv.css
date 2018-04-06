@@ -19,8 +19,9 @@ body{
 }
 
 .mainico img{
-    width:200px;
-    padding:30px;
+    width:500px;
+    margin:60px;
+    border-radius:250px;
 }
 a{
     color:#0066ff;

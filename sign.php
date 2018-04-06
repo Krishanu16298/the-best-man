@@ -4,21 +4,23 @@
         if($_GET['q'] == 'up'){
             if($_POST['password'] == $_POST['conpass'] and $_POST['password'] !== ''){
                 session_start();
-                $query = 'select name,mobile from users where mobile = "'.$_POST['mobile'];
+                $query = 'select mobile from users where mobile="'.$_POST['mobile'].'"';
                 $res = mysqli_query($conn, $query);
-                $result = mysqli_fetch_all($res, MYSQLI_ASSOC);
-                if($result === null){
+                $result = mysqli_fetch_assoc($res);
+                if($result!==null) {
+                    echo '<script>alert("User already exists !!");</script>';
+                }
+                else{
                     $_SESSION['name'] = $_POST['name'];
                     $_SESSION['email'] = $_POST['email'];
                     $_SESSION['mobile'] = $_POST['mobile'];
-                    $query = 'insert into users(name,email,mobile,password) values("'.$_POST['name'].'","'.$_POST['email'].'","'.$_POST['mobile'].'","'.$_POST['password'].'")';
+                    $query = 'insert into users(name,email,mobile,city,address,password) values("'.$_POST['name'].'","'.$_POST['email'].'","'.$_POST['mobile'].'","'.$_POST['city'].'","'.$_POST['address'].'","'.$_POST['password'].'")';
+                    mysqli_query($conn, $query);
                     header('Location: login.php');
                 }
-                else {
-                    echo '<script>alert("User already exists !!");</script>';
-                }
+                
             }
-            else if($_POST['password'] != $_POST['conpass'] and $_POST['name'] == '' and $_POST['email'] == '' and $_POST['mobile'] == ''){
+            else if($_POST['password'] != $_POST['conpass'] or $_POST['name'] == '' and $_POST['email'] == '' and $_POST['mobile'] == ''){
                 echo '<script>alert("Please enter correct info !!");</script>';
             }
         }
@@ -70,6 +72,10 @@
             <input type="email" class="form-control" name="email">
             <label>Mobile no.</label>
             <input type="text" pattern="[7-9]{1}[0-9]{9}" class="form-control" name="mobile">
+            <label>City</label>
+            <input type="text" class="form-control" name="city">
+            <label>Address</label>
+            <input type="text" class="form-control" name="address">
             <label>Password</label>
             <input type="password" class="form-control" name="password">
             <label>Confirm Password</label>

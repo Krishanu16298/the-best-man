@@ -43,7 +43,7 @@
         <div class="row text-center text-white">
           <div class="col content animated fadeInUp">
             <h1>The Best Man Services For You</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nihil blanditiis hic repellat, non dolor, magni deserunt asperiores excepturi, culpa quis! Unde possimus voluptas minima delectus distinctio laudantium dolorem autem.</p>
+            <p>Find the Best services around you!</p>
             <a href="#desc" id="redirect" class="btn btn-outline-primary">Read More</a>
           </div>
         </div>
@@ -57,7 +57,7 @@
           <div class="col-lg-2"><img style="border-radius: 100px;" src="img/2.gif"></div>
           <div class="col-lg-10">
             <h1>Hello</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quaerat amet necessitatibus sunt ea, vitae possimus veniam, nisi commodi nostrum labore saepe nobis esse aperiam voluptas. Repellendus doloremque nobis id.</p>
+            <p>Welcome to The Best Man. Here you will find the best Men and Women who can solve your daily problems efficiently. Just Sign up and get help, Anytime, Anywhere!!</p>
           </div>
         </div>
       </div>
@@ -87,26 +87,24 @@
         </div>
         <div class="col-lg-8 align-self-center">
           <h1>Customer Friendly</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repellendus magnam aliquid autem odit inventore reiciendis maxime delectus consectetur praesentium quidem, ipsam, beatae explicabo qui eius fugit harum obcaecati iure!</p>
+          <p>We provide Services based completely upon your needs. The services are divided into different categories so as to help you better navigate through the services we provide.</p>
         </div>
       </div>
-      <div class="row" style="padding-bottom:100px;">
-        <div class="col-lg-4 text-center align-self-end">
-          <h1>24 Hour Sevice</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor itaque fugiat quia quaerat nesciunt nostrum omnis minima alias nisi hic quidem, dolorem nihil ipsum, distinctio recusandae quisquam tempore veritatis.</p>
+      <div class="row" style="padding-bottom:100px; font-size:40px;">
+        <div class="col-lg-4 text-center align-self-center">
+          <h1 style="font-size:60px;">24 Hour Service</h1>
         </div>
         <div class="col-lg-4 text-center">
           <img src="img/6.gif">
         </div>
-        <div class="col-lg-4 text-center align-self-end">
-          <h1>7 Days of week</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam voluptas, quos facilis? Officiis, veniam at provident facere numquam consequuntur repudiandae perferendis dignissimos consectetur pariatur animi quasi sunt voluptatem, modi, corporis.</p>
+        <div class="col-lg-4 text-center align-self-center">
+          <h1 style="font-size:60px;">7 Days of week</h1>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-8 align-self-center text-right">
           <h1>Quality Service</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem modi non earum et amet placeat quae vero nisi iure laudantium autem, blanditiis assumenda, libero inventore perferendis, doloremque voluptatem, alias provident?</p>
+          <p>We provide the best quility services so that you do not face any problem (since you already have one ;-)). Browse thorugh the service in the Services tab.</p>
         </div>
         <div class="col-lg-4 text-center"><img src="img/1.gif"></div>
       </div>
@@ -136,17 +134,17 @@
         <div class="box col-lg-4">
           <i class="fas ico text-primary fa-hand-holding-usd"></i>
           <h2>Low-Cost Services</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est perferendis, repellendus dolore quos quo alias numquam nesciunt animi quae!</p>
+          <p>We ensure the lowest possible cost for the services and highest possible quality for you. Our Best Men are registered servicemen who are trained</p>
         </div>
         <div class="box col-lg-4">
           <i class="fas ico text-success fa-shipping-fast"></i>
           <h2>Fast Service delivery</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est perferendis, repellendus dolore quos quo alias numquam nesciunt animi quae!</p>
+          <p>We provide the services that reach your doorsteps within a short period of time. This makes your problems being solved faster</p>
         </div>
         <div class="box col-lg-4">
           <i class="far ico text-danger fa-comments"></i>
           <h2>Quick Response</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est perferendis, repellendus dolore quos quo alias numquam nesciunt animi quae!</p>
+          <p>We respond within minutes to your queries and complaints so as to get a better feedback which helps us improve our service quality.</p>
         </div>
       </div>
     </div>
