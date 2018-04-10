@@ -1,3 +1,40 @@
+<?php
+
+    if(filter_has_var(INPUT_POST, 'submit')){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+        if(!empty($name) && !empty($email) && !empty($message)){
+            if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+                echo "<script>alert('Please enter valid email!!');</script>";
+            } else {
+                $tomail = 'mkrishanu98@gmail.com';
+                $subject = 'Contact request from '.$name;
+                $body = '<h1>Contact Request</h1>
+                    <h3>Name : </h3><p>'.$name.'</p>
+                    <h3>Email Id : </h3><p>'.$email.'</p>
+                    <h3>Message : </h3><p>'.$message.'</p>
+                ';
+                $headers = "MIME-Version: 1.0"."\r\n";
+                $headers .= "Content-Type:text/html;charset=UTF-8"."\r\n";
+
+                $headers .= "From: ".$name."<".$email.">"."\r\n";
+
+                if(mail($tomail,$subject,$body,$headers)){
+                    echo "<script>alert('Your response is submitted!!');</script>";
+                } else {
+                    echo "<script>alert('Response not submitted!!');</script>";
+                }
+            }
+        }
+        else{
+            echo "<script>alert('Please enter correct information!!');</script>";
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,12 +88,12 @@
             <section id="bodyf" class="container">
                 <div class="row">
                     <div class="col">
-                        <form class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name"><br>
-                            <input type="email" class="form-control" placeholder="Your Email"><br>
-                            <textarea rows="8" class="form-control" placeholder="Message"></textarea><br>
+                        <form class="form-group" action="contact.php" method="post">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name"><br>
+                            <input type="email" name="email" class="form-control" placeholder="Your Email"><br>
+                            <textarea rows="8" name="message" class="form-control" placeholder="Message"></textarea><br>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-outline-light">Send</button>
+                                <button type="submit" name="submit" class="btn btn-outline-light">Send</button>
                             </div>
                         </form>
                     </div>

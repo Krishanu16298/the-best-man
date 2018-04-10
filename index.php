@@ -104,7 +104,7 @@
       <div class="row">
         <div class="col-lg-8 align-self-center text-right">
           <h1>Quality Service</h1>
-          <p>We provide the best quility services so that you do not face any problem (since you already have one ;-)). Browse thorugh the service in the Services tab.</p>
+          <p>We provide the best quility services so that you do not face any problem (since you already have one ;-)). Browse through the service in the Services tab.</p>
         </div>
         <div class="col-lg-4 text-center"><img src="img/1.gif"></div>
       </div>

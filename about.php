@@ -63,7 +63,7 @@
                         </blockquote>
                     </div>
                     <div class="col-lg-4" style="margin-top:105px;">
-                        <img src="img/5.gif" alt="">
+                        <img src="img/kmt.jpg" alt="">
                         <h2>Krishanu Mallik Thakur</h2>
                         <p>Main Frontend Developer<br>Server Manager<br>Main Back-end coding</p>
                         <blockquote class="blockquote">"A code without error is a trap!"
@@ -73,7 +73,7 @@
                         </blockquote>
                     </div>
                     <div class="col-lg-4">
-                        <img src="img/7.gif" alt="">
+                        <img src="img/kk.jpg" alt="">
                         <h2>Kishan Keshari</h2>
                         <p>Designing and Implementation<br>Expert and Analyzer</p>
                         <blockquote class="blockquote">"What happens in console log, stays in console log!"
